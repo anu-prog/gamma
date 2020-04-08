@@ -57,7 +57,5 @@ This creates a list of elements that are equal to each other.
 It then further simplifies this list to remove any repetitions or redundancies resulting from the symmetry of gamma.
 The end result is a list of the final constraints, in a format that is suitable for exporting to Matlab.
 
-THINGS TO IMPROVE.
-Currently, we are manually writing out the operators required to generate gamma. We should automate this! 
 
 
