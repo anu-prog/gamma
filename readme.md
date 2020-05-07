@@ -1,4 +1,4 @@
-GUIDE TO AUTOMATING GAMMA MATRIX CALCULATIONS.
+Guide to automating gamma matrix calculations.
 ----------------------------------------------
 
 This code allows us to generate and constrain the elements of a 'moment matrix' Gamma, which is used to simplify our semidefinite programming (SDP) calculations. Gamma is often a very large matrix, and we wish to generate a list of unique constraints on the elements (i.e. which elements are equal to one another). 
