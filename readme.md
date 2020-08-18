@@ -3,7 +3,7 @@ Guide to automating gamma matrix calculations.
 
 This code allows us to generate and constrain the elements of a 'moment matrix' Gamma, which is used to simplify our semidefinite programming (SDP) calculations. Gamma is often a very large matrix, and we wish to generate a list of unique constraints on the elements (i.e. which elements are equal to one another). 
 
-We use 5 scripts:
+We run the following code before running the SDP: 
 1) constraints.sh - bash script to run all the programs
 2) gamma.cpp - C++ program to generate elements of gamma from given rows and columns
 3) processgamma.py - python script to go through and simplify elements of gamma
@@ -57,5 +57,5 @@ This creates a list of elements that are equal to each other.
 It then further simplifies this list to remove any repetitions or redundancies resulting from the symmetry of gamma.
 The end result is a list of the final constraints, in a format that is suitable for exporting to Matlab.
 
-
+The Matlab files in this repo then run the relevant SDP for each self-test. 
 
